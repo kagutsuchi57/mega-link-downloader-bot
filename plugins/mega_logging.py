@@ -38,7 +38,6 @@ if email != "None" and password != "None":
         m = mega.login()
 else:
     m = mega.login() # Here we make an anonymous, temporary account for mega.py!
-      speedlimit_in_megacmd = subprocess.run(["mega", speed])
     
 @Client.on_message(filters.command("mega_ini") & filters.user(int(Config.OWNER_ID)))
 async def log_to_megatools(client, message):
